@@ -10,7 +10,10 @@ public:
 	TempClass(T i);
 	T getX();
 	void showX();
+	~TempClass();
 };
+
+
 
 template<class T>
 TempClass<T>::TempClass(T i)
@@ -26,4 +29,9 @@ template<class T>
 void TempClass<T>::showX()
 {
 	cout << x<<endl;
+}
+
+template<class T>
+TempClass<T>::~TempClass()
+{
 }
